@@ -17,6 +17,7 @@ public class exercicio9 {
         } else {
             System.out.println("Empréstimo não pode ser concedido!");
         }
+        scanner.close();
     }
     
 }
