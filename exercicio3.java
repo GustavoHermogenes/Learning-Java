@@ -1,24 +1,20 @@
 import java.util.Scanner;
-
 public class exercicio3 {
-    public static void main(String[] args ) {
-        Scanner numeros = new Scanner(System.in);
-        int num1, num2, num3, maior;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n1, n2;
+        System.out.println("Digite o primeiro número: ");
+        n1 = scanner.nextInt();
+        System.out.println("Digite o segundo número: ");
+        n2 = scanner.nextInt();
 
-        System.out.println("digite três números inteiros: ");
-        num1 = numeros.nextInt();
-        num2 = numeros.nextInt();
-        num3 = numeros.nextInt();
-
-        if (num1 == num2 && num2 == num3) {
+        if(n1 == n2){
             System.out.println("Os números são iguais.");
-        }else{
-            maior = Math.max(num1, Math.max(num2, num3));
-            //O código do Math.max serve para fazer um comparativo entra dois números e retornar o maior
-            System.out.println("O maior número é o " + maior);
-
+        } else{
+            n1 = n1 - n2;
+            System.out.printf("A diferença entre os números é %d. \n", n1);
         }
-        numeros.close();
 
+        scanner.close();
     }
 }

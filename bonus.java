@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio1 {
+public class bonus {
     public static void main(String[] args) {
         Scanner eixo = new Scanner(System.in);
 

@@ -1,27 +1,20 @@
 import java.util.Scanner;
-
 public class exercicio4 {
-    public static void main(String [] argt){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int idade;
-        System.out.print("Escreva sua idade: ");
-        idade = scanner.nextInt();
+        Float n1, n2;
 
-        if (idade < 5) {
-            System.out.println("Idade do nadador é inferior à permitida.");
-        }else if (idade <= 7) {
-            System.out.println("o nadador pertence ao grupo infantil A");
-        }else if (idade <= 10) {
-            System.out.println("o nadador pertence ao grupo infantil B");
-        }else if (idade <= 13) {
-            System.out.println("o nadador pertence ao grupo juvenil A");
-        }else if (idade <= 17) {
-            System.out.println("o nadador pertence ao grupo juvenil B");
-        }else if (idade > 18) {
-            System.out.println("o nadador pertence ao grupo Sênior");
+        System.out.print("Digite o primeiro número: ");
+        n1 = scanner.nextFloat();   
+        System.out.print("Digite o segundo número: ");
+        n2 = scanner.nextFloat();
+        if(n1 == n2){
+            System.out.println("Os números são iguais.");
+        } else if(n1 > n2) {
+            System.out.printf("O número %.2f é o maior.\n", n1);
+        } else {
+            System.out.printf("O número %.2f é o maior.\n", n2);
         }
-
         scanner.close();
-
     }
 }
